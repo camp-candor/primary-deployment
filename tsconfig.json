@@ -1,20 +1,16 @@
 {
-    "extends": "@snailicide/build-config/tsconfig-base",
-    "compilerOptions": {
-        "target": "ESNext",
-        "lib": ["ESNext", "DOM"],
-        "composite": true,
-        "module": "ESNext",
-        "types": [""],
-        "rootDir": "."
-    },
-    "exclude": ["./*.ts"],
-    "files": [
-        "./.lintstagedrc.mts",
-        "./.markdownlint-cli2.mts",
-        "./commitlint.config.ts",
-        "./prettier.config.ts"
-        //  "./typedoc.config.ts"
-        // "./.vitepress/config.mts"
-    ]
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@snailicide/shared": ["./packages/shared/src/index.ts"],
+      "@snailicide/build-config": ["./packages/build-config/index.js"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "references": [{ "path": "./packages/shared" }, { "path": "./packages/build-config" }]
 }

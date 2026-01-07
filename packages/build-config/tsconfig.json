@@ -1,10 +1,13 @@
 {
-    "extends": "./tsconfig-local-base.json",
-    "compilerOptions": {
-        "types": ["node"]
-    },
-    "exclude": ["node_modules", "./src/**/*.ts"],
-    "files": ["./package.json"],
-    "include": ["*.ts"],
-    "references": [{ "path": "./src" }, { "path": "./tsconfig-vitepress.json" }]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "allowJs": true,
+    "checkJs": false,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["*.js", "*.mjs", "*.cjs"],
+  "exclude": ["dist", "node_modules"]
 }

@@ -1,27 +1,26 @@
-# Snailicide Monorepo [Repo](https://github.com/gbtunney/snailicide-monorepo)
+# @snailicide/root Monorepo
 
-## Helpful Links
+## 🤖 For AI Agents (Jules/Copilot)
 
-- [pnpm](https://pnpm.io/motivation)
-- [typescript](https://www.typescriptlang.org/docs/)
-- [JSdoc Cheatsheet](https://devhints.io/jsdoc) tes example:::
+**STOP.** Read [AGENT_INSTRUCTIONS.md](./AGENT_INSTRUCTIONS.md) before attempting any tasks.
+This repository has strict rules regarding Package Managers (NPM Only) and Git Hooks.
 
-## Example monorepo project
+## 🚀 For Humans
 
-Creating a monorepo project with React and Express.JS using pnpm Workspaces.
-This is the source code of a blog post I am writing about this topic.
+### Prerequisities
 
-Read the article:
-[Yarn Workspaces: Organize Your Project’s Codebase Like A Pro](https://www.smashingmagazine.com/2019/07/yarn-workspaces-organize-project-codebase-pro/)
+- Node.js >= 18
+- NPM >= 9
 
-## How to install and execute
+### Quick Start
 
-> Important! Suggested package manager is [pnpm](https://pnpm.io)
+```bash
+# 1. Install
+npm install
 
-1. _Clone this repository_ locally
-   `$ git clone git@github.com:gbtunney/snailicide-monorepo.git`
-2. Install the dependencies. Inside the root `$ pnpm install`
+# 2. Setup Hooks
+npm run prepare
 
-## Commit to repository
-
-1. Invoke commitizen with commitlint config `$ pnpm commit`
+# 3. Dev
+npm run dev
+```
