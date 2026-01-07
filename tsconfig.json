@@ -3,7 +3,17 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+
+    // 🛡️ STRICTNESS LEVEL 100 🛡️
     "strict": true,
+    "noImplicitAny": true, // "Type it or delete it"
+    "strictNullChecks": true, // No "undefined" surprises
+
+    // Recommended additions for "Level 100" (The "Delete it" enforcement):
+    "noUnusedLocals": true, // Error if you define a var and don't use it
+    "noUnusedParameters": true, // Error if you define a function arg and don't use it
+    "noFallthroughCasesInSwitch": true,
+
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {

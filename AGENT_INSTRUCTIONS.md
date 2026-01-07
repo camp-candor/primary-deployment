@@ -17,3 +17,9 @@
 
 - If dependencies seem broken: `npm run reset`.
 - If Types aren't updating: `npm run build:force`.
+
+## TypeScript Rules:
+
+- **noImplicitAny is ON.** Do not use any unless absolutely necessary (and verify with a comment).
+- **noUnusedLocals is ON.** If you declare a variable, you must use it, or delete it.
+- **strictNullChecks is ON.** You must handle null and undefined cases explicitly.
