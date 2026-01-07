@@ -9,8 +9,8 @@ This repository has strict rules regarding Package Managers (NPM Only) and Git H
 
 ### Prerequisities
 
-- Node.js >= 18
-- NPM >= 9
+- Node.js >= 20
+- NPM >= 10
 
 ### Quick Start
 
