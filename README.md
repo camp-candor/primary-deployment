@@ -1,4 +1,4 @@
-# @snailicide/root Monorepo
+# @snailicide/root The Monorepo of Discipline
 
 ## 🤖 For AI Agents (Jules/Copilot)
 
